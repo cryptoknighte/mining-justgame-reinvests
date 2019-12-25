@@ -1,0 +1,198 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_referredName",
+				"type": "bytes32"
+			}
+		],
+		"name": "purchaseTickets",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "roundNumber",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "fundsSpent",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "experienceSpent",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "ticketsGained",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "isUpgrade",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "totalExperience",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "accountName",
+				"type": "bytes32"
+			}
+		],
+		"name": "ticketPurchase",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_activeAccount",
+				"type": "address"
+			}
+		],
+		"name": "playerMetadataOf",
+		"outputs": [
+			{
+				"name": "virtualDividends",
+				"type": "uint256"
+			},
+			{
+				"name": "virtualWinnings",
+				"type": "uint256"
+			},
+			{
+				"name": "virtualLeaderBonus",
+				"type": "uint256"
+			},
+			{
+				"name": "ticketsOwned",
+				"type": "uint256"
+			},
+			{
+				"name": "myPosition",
+				"type": "uint256"
+			},
+			{
+				"name": "backing",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_state",
+				"type": "bool"
+			}
+		],
+		"name": "toggleAutomaticallyUpgrade",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "enabled",
+				"type": "bool"
+			}
+		],
+		"name": "autoUpgradeToggled",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Players",
+		"outputs": [
+			{
+				"name": "lastRound",
+				"type": "uint256"
+			},
+			{
+				"name": "squadEarnings",
+				"type": "uint256"
+			},
+			{
+				"name": "dividendEarnings",
+				"type": "uint256"
+			},
+			{
+				"name": "winnerEarnings",
+				"type": "uint256"
+			},
+			{
+				"name": "experienceTotal",
+				"type": "uint256"
+			},
+			{
+				"name": "experienceNextRound",
+				"type": "uint256"
+			},
+			{
+				"name": "experienceToSpend",
+				"type": "uint256"
+			},
+			{
+				"name": "automaticallyUpgrade",
+				"type": "bool"
+			},
+			{
+				"name": "lastInteraction",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_activeAccount",
+				"type": "address"
+			}
+		],
+		"name": "upgradeTickets",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+]
