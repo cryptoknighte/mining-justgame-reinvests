@@ -1,0 +1,7 @@
+{
+  "privatekey" : "...",
+  "fullNodeProvider" : "...",
+  "solidityNode" : "...",
+  "eventServer" : "...",
+  "primaryContractAddress" : "...",
+}
