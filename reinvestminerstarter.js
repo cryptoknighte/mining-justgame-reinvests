@@ -1,5 +1,5 @@
 const TronWeb = require('tronweb')
-const Config = require('config.json')
+const Config = require('./config.json')
 const util = require('util')
 
 const HttpProvider = TronWeb.providers.HttpProvider;
