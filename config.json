@@ -1,5 +1,5 @@
 {
-  "privatekey" : "...",
+  "privateKey" : "...",
   "fullNodeProvider" : "...",
   "solidityNode" : "...",
   "eventServer" : "...",
